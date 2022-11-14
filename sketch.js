@@ -62,6 +62,23 @@ createCanvas(windowWidth,windowHeight,);
 
 }
 
+//drag function
+ function mouseDragged(event) {
+  
+     if(pmouseY < mouseY){
+         
+         pos = pos - 3;
+         
+     }
+
+     if(pmouseY > mouseY){
+         
+         pos = pos + 3;
+         
+     }
+
+  }   
+
 
 
 function draw() {
@@ -72,7 +89,8 @@ function draw() {
 let r1 = innerWidth/2000
     
     background(12, 22, 42);
-
+    
+   
     
     if (pos > 200){
     moveFrame();
@@ -83,7 +101,7 @@ let r1 = innerWidth/2000
     image(squareimage[squareIndex],innerWidth/2, height/2,squareimage[squareIndex].width*r1,squareimage[squareIndex].height*r1);
     }
 
-
+   
 
     
     
@@ -101,25 +119,6 @@ if (squareIndex > squareimage.length -1 )
     
     
 }
-//drag function
- function mouseDragged() {
-  
-     if(pmouseY < mouseY){
-         
-         pos = pos - 1;
-         
-     }
-
-     if(pmouseY > mouseY){
-         
-         pos = pos + 1;
-         
-     }
-   
-
-  console.log(pos);
-
-  }   
 
 
 
