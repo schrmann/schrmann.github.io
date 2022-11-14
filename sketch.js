@@ -62,8 +62,13 @@ createCanvas(windowWidth,windowHeight,);
 
 }
 
+
+
 function draw() {
 
+
+    
+    
 let r1 = innerWidth/2000
     
     background(12, 22, 42);
@@ -79,6 +84,9 @@ let r1 = innerWidth/2000
     }
 
 
+
+    
+    
 }
 
 function moveFrame(){
@@ -93,6 +101,27 @@ if (squareIndex > squareimage.length -1 )
     
     
 }
+//drag function
+ function mouseDragged() {
+  
+     if(pmouseY < mouseY){
+         
+         pos = pos - 1;
+         
+     }
+
+     if(pmouseY > mouseY){
+         
+         pos = pos + 1;
+         
+     }
+   
+
+  console.log(pos);
+
+  }   
+
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
