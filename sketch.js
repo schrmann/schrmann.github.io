@@ -114,13 +114,13 @@ createCanvas(windowWidth,windowHeight,);
   
      if(pmouseY < mouseY){
          
-         pos = pos - 5;
+         pos = pos - 15;
          
      }
 
      if(pmouseY > mouseY){
          
-         pos = pos + 5;
+         pos = pos + 15;
          
      }
 
