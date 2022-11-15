@@ -114,13 +114,13 @@ createCanvas(windowWidth,windowHeight,);
   
      if(pmouseY < mouseY){
          
-         pos = pos - 10;
+         pos = pos - 5;
          
      }
 
      if(pmouseY > mouseY){
          
-         pos = pos + 10;
+         pos = pos + 5;
          
      }
 
@@ -154,12 +154,7 @@ let r1 = innerWidth/2000
     squareIndex2 = map(pos, 351, 2050, 0, squareimage2.length - 1).toFixed(0);    
         
     image(squareimage2[squareIndex2],innerWidth/2, height/2,squareimage[squareIndex2].width*r1,squareimage[squareIndex2].height*r1);
-    
 
-      
-   
-        
-        
     }
 
 
