@@ -15,7 +15,11 @@ function mouseWheel(event) {
 }
 
 function preload() { 
-   
+ 
+}
+
+function setup() {
+
 
 squareimage=[
     
@@ -88,21 +92,9 @@ squareimage2=[
     loadImage('F_ring/Komp 1_29.png'),
     
    
-]    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
+]   
 
-function setup() {
+
 //quimp= createGraphics(innerWidth/2, innerHeight/2);
 imageMode(CENTER) 
 createCanvas(windowWidth,windowHeight,);
@@ -114,13 +106,13 @@ createCanvas(windowWidth,windowHeight,);
   
      if(pmouseY < mouseY){
          
-         pos = pos - 15;
+         pos = pos - 5;
          
      }
 
      if(pmouseY > mouseY){
          
-         pos = pos + 15;
+         pos = pos + 5;
          
      }
 
@@ -154,7 +146,12 @@ let r1 = innerWidth/2000
     squareIndex2 = map(pos, 351, 2050, 0, squareimage2.length - 1).toFixed(0);    
         
     image(squareimage2[squareIndex2],innerWidth/2, height/2,squareimage[squareIndex2].width*r1,squareimage[squareIndex2].height*r1);
+    
 
+      
+   
+        
+        
     }
 
 
