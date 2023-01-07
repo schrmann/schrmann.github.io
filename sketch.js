@@ -98,7 +98,19 @@ function preload() {
     
 //BackTex = createGraphics(1400,788);
     
-    
+    //text scene1_title
+left_Objects = loadImage('scene1new/monk.png');    
+schablone = loadImage('scene1new/SchabloneV2.png'); 
+blue_Back = loadImage('scene1new/blue_Back.jpg');   
+glass = loadImage('scene1new/glass_eye.png');   
+left_Bush = loadImage('scene1new/grass.png');  
+right_hand = loadImage('scene1new/hand.png'); 
+pyramid_blue = loadImage('scene1new/Pyramid.png');
+wineyard = loadImage ('scene1new/WineMountain.png');
+pupil = loadImage ('scene1new/glass_eye_pupil.png');
+
+black_translate = loadImage ('scene1new/black_Overlay.png')
+
     
 
   fontBlack = loadFont('fonts/Raleway-Black.ttf');
@@ -114,18 +126,6 @@ function setup() {
     
 frameRate(30);
 
-//text scene1_title
-left_Objects = loadImage('scene1new/monk.png');    
-schablone = loadImage('scene1new/SchabloneV2.png'); 
-blue_Back = loadImage('scene1new/blue_Back.jpg');   
-glass = loadImage('scene1new/glass_eye.png');   
-left_Bush = loadImage('scene1new/grass.png');  
-right_hand = loadImage('scene1new/hand.png'); 
-pyramid_blue = loadImage('scene1new/Pyramid.png');
-wineyard = loadImage ('scene1new/WineMountain.png');
-pupil = loadImage ('scene1new/glass_eye_pupil.png');
-
-black_translate = loadImage ('scene1new/black_Overlay.png')
 
 
 Scene1_title_text = createGraphics(2000, 800);
