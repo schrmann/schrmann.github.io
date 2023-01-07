@@ -91,7 +91,9 @@ function mouseWheel(event) {
 
 function preload() { 
     
-    
+black_translate = loadImage ('scene1new/black_Overlay.png')
+fontBlack = loadFont('fonts/Raleway-Black.ttf');
+fontUnica = loadFont('fonts/UnicaOne-Regular.ttf');
 //S1T = loadStrings('text/Scene1_Intro_reader.txt');
 
  
@@ -99,6 +101,20 @@ function preload() {
 //BackTex = createGraphics(1400,788);
     
     //text scene1_title
+
+    
+
+
+}
+
+function setup() {
+
+pixelDensity(1);    
+    
+frameRate(30);
+
+
+
 left_Objects = loadImage('scene1new/monk.png');    
 schablone = loadImage('scene1new/SchabloneV2.png'); 
 blue_Back = loadImage('scene1new/blue_Back.jpg');   
@@ -109,22 +125,11 @@ pyramid_blue = loadImage('scene1new/Pyramid.png');
 wineyard = loadImage ('scene1new/WineMountain.png');
 pupil = loadImage ('scene1new/glass_eye_pupil.png');
 
-black_translate = loadImage ('scene1new/black_Overlay.png')
-
-    
-
-  fontBlack = loadFont('fonts/Raleway-Black.ttf');
-  fontUnica = loadFont('fonts/UnicaOne-Regular.ttf');
-    
 
 
-}
 
-function setup() {
 
-    
-    
-frameRate(30);
+
 
 
 
