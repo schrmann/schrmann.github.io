@@ -89,6 +89,9 @@ function mouseWheel(event) {
   console.log(pos);
 }
 
+
+
+
 function preload() { 
     
 black_translate = loadImage ('scene1new/black_Overlay.png')
@@ -253,13 +256,13 @@ createCanvas(windowWidth,windowHeight,WEBGL);
   
      if(pmouseY < mouseY){
          
-         pos = pos - 5;
+         pos = pos - 10;
          
      }
 
      if(pmouseY > mouseY){
          
-         pos = pos + 5;
+         pos = pos + 10;
          
      }
 
@@ -558,35 +561,7 @@ pop();
 
 pop();
 
-//Pupil Glass.2
-    
-     push();
-    translate(map(mouseX, 0, width, -10+rel_add, 10-rel_add), relheight-pos-110+rel_add*5,22+pos*0.3);
-    rotateY(map(mouseX, 0, width, 0.03, -0.03)-pos/2000);
-    noStroke();
-    
-    fill(0, 0, 0,0);
 
-
-  if (pos> relTint1){
-     
- 
-      tint(255,255-map(pos,500,1000,1,254)); 
-        
-     }
-    
-    texture(pupil);
-   
-      if (pos> relTint1){
-     
- 
-      tint(255,255-map(pos,relTint1,relTint1*1.4,1,254)); 
-        
-     }
-   
-    plane(pupil.width*r2*0.7,pupil.height*r2*0.7);
-
-pop();
 
 
       
@@ -733,7 +708,19 @@ if (windowWidth > 1400){
     rel_add = 0;
 }
     
-    
 
 
 }
+
+
+ function touchStarted(){
+  return false;
+}
+
+function touchMoved(){
+  return false;
+}
+
+function touchEnded(){
+  return false;
+}   
