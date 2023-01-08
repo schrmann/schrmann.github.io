@@ -112,7 +112,7 @@ fontUnica = loadFont('fonts/UnicaOne-Regular.ttf');
 
 function setup() {
 
-pixelDensity(1);    
+  
     
 frameRate(30);
 
